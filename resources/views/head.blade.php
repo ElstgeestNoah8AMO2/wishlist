@@ -29,6 +29,11 @@
                 <a class="nav-link" href="/beheer">Beheer</a>
             </li>
         </ul>
+        @if($loggedin->has('loggedin'))
+            <span>Hello {{ $user }}</span><a class="text-dark text-decoration-none float-right" href="/logout">Logout</a>
+         @else
+            <a class="text-dark text-decoration-none float-right" href="/inloggen">Inloggen</a>
+        @endif
     </div>
 </nav>
 <div>

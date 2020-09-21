@@ -13,6 +13,7 @@
             <div>
                 <p>{{$data->beschrijving}}</p>
                 <p>{{$data->prijs}}</p>
+                <a href="{{$data->link}}">Link</a>
             </div>
         @endforeach
     </div>

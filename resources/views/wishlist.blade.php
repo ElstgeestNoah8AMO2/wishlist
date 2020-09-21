@@ -22,6 +22,10 @@
                 <input name="prijs" type="number">
             </li>
             <li class="list-item">
+                <span>Link</span>
+                <input name="prijs" type="text">
+            </li>
+            <li class="list-item">
                 <input type="submit" value="Confirm">
             </li>
         </ul>

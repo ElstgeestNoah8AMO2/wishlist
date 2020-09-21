@@ -21,5 +21,17 @@ Route::get('/wishlist', function () {
     return view('wishlist');
 });
 
+Route::get('/inloggen', function () {
+    return view('inloggen');
+});
+
+Route::get('/registreren', function () {
+    return view('registreren');
+});
+
 Route::post('/wishlist', 'db_commands@create_wish');
+
+Route::post('/inloggen', 'user_controller@login');
+
+Route::post('/registreren', 'user_controller@register');
 
